@@ -5,6 +5,10 @@ body {
     background-position: center;
 }
 
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 .container {
     width: 960px;
     margin: 0 auto;
@@ -128,11 +132,32 @@ h2,li.whatido__skill h3,.info-section__description {
     clear: both;
 }
 
-section.info-section.whatido header h2:after {
+header h2:after {
   display: block;
   width: 80px;
   content: "";
   border-bottom: 3px solid black;
   margin: 0 auto;
+}
+
+ul.education-experience__list li img {
+    float: left;
+    width: 180px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+.education-experience__list h3 p{
+    overflow: hidden;
+}
+
+.photos__list li{
+    float: left;
+    box-sizing: border-box;
+    width: 25%;
+    padding: 10px;
+}
+.photos__list li img {
+    width: 100%;
 }
 
